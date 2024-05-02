@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import { globalContextAPI } from "../../main";
 
 
 const LogIn = () => {
+
+   const contextAPIValue = useContext(globalContextAPI);
+   console.log(contextAPIValue)
     return (
         <div className="flex justify-center items-center h-screen">
            

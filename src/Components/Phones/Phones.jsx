@@ -1,7 +1,11 @@
+
 import Phone from "../Phone/Phone";
 
 const Phones = ({phones}) => {
-    // console.log(phones)
+
+    // const {getPhone} = useGetPhone()
+
+    // console.log(getPhone)
     return (
         <div className="py-8">
                <h1 className="text-2xl text-center">Our all categories phones</h1>

@@ -1,6 +1,7 @@
 import Rating from "react-rating";
 import { Link } from "react-router-dom";
 
+
 const Phone = ({phone}) => {
      
     const {brand_name,rating,price,phone_name, image,id} = phone || {};
@@ -62,7 +63,7 @@ const Phone = ({phone}) => {
     </p>
   </div>
   <div className="p-6 pt-0">
-    <Link to={`/phones/${id}`}>
+    <Link to={`/phones/${id}` } state={phone_name} >
     <button
       className=" bg-gray-300 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
       type="button">
