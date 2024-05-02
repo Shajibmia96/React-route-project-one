@@ -67,7 +67,6 @@ const PhoneCard = ({phone}) => {
     <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
      {phone_name}
     </h4>
-  
     <a href="#" className="inline-block"><button
       onClick={handlesAddTOFavorites}
         className="flex items-center text-red-400 gap-2 px-6 py-3 font-sans text-xs font-bold text-center  uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
